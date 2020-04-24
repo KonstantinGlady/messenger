@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox  xmlns:fx="http://javafx.com/fxml" fx:controller="org.gik.messenger.client.Controller">
+  <!-- <MenuBar>
+      <Menu text="Menu">
+         <MenuItem text=" Exit"/>
+      </Menu>
+   </MenuBar>-->
+  <TextArea fx:id="mainArea" editable="false" VBox.vgrow="ALWAYS"/>
+   <HBox>
+      <TextField fx:id="msgField" HBox.hgrow="ALWAYS" promptText="Enter message.." onAction="#sendMsgAction"/>
+      <Button text="  Send  " onAction="#sendMsgAction"/>
+   </HBox>
+</VBox>
